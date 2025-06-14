@@ -29,13 +29,13 @@ export default function Header() {
 
         <div className="d-flex align-items-center ms-auto position-relative">
           <button
-            className="btn btn-outline-light dropdown-toggle d-flex align-items-center"
+            className="btn btn-outline-light dropdown-toggle d-flex align-items-center font-bold rounded-full"
             type="button"
             id="profileDropdown"
             onClick={toggleDropdown}
             aria-expanded={dropdownOpen}
           >
-            <span>My Profile</span>
+            User
           </button>
 
           {dropdownOpen && (
