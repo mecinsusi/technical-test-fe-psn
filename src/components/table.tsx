@@ -158,7 +158,7 @@ export function TableComponent() {
         icon="pi pi-plus"
         severity="success"
         onClick={openNewComment}
-        className="w-fit"
+        className="w-fit py-2 px-3"
       />
     </div>
   );
