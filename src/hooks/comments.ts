@@ -8,7 +8,7 @@ export interface Comment {
   body: string;
 }
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL;
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "https://jsonplaceholder.typicode.com/comments";
 
 export function useComments() {
   const [comments, setComments] = useState<Comment[]>([]);
