@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import { cookies } from "next/headers";
 
-const hardcodeUsername = process.env.NEXT_PUBLIC_TEST_USERNAME;
-const hardcodePassword = process.env.NEXT_PUBLIC_TEST_PASSWORD;
+const hardcodeUsername = process.env.NEXT_PUBLIC_TEST_USERNAME || "susi";
+const hardcodePassword = process.env.NEXT_PUBLIC_TEST_PASSWORD || "passwordnya1;
 
 export async function POST(req: Request) {
   const { username, password } = await req.json();
